@@ -52,3 +52,12 @@ mp.activation_fn(-10)
 #   d değerleri bu şekilde güncellenir.
 #   fonksiyonlar çalıştırıldıktan sonra yeni W değeri array([ 0., -1.,  0.]) bu şekilde olur.
 #   ancak predict fonksiyonu üzerinden çıktı aldığımızda doğru değerleri üretmemektedir.
+
+# 3- 40 farklı imza tanımı için 
+#    bir imzayı m*n çözünürlüğünde düşünürsek bunu imza.reshape(m*n*3,1) ile tek sütün halinde tüm rgb değerlerini gösterebilir ve predict fonksiyonunda kullanabiliriz.
+#    X değerlerimiz m*n*3 satır 40 sütundan oluşan bir matris olacaktır.
+#    d değerlerimiz ise 40 farklı değerden oluşacaktır.
+
+
+# 4- error değerlerini hesaplamak girdi olarak verdiğimiz X değerleri predict fonksiyonuna yollanarak i girdisi için Zi değeri elde edilir ve bu değer d[i] den çıkartılarak mevcut epochs için error değeri oluşturulmuş olur.
+
