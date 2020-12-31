@@ -41,3 +41,14 @@ x=np.asarray([-10,-2,-30,4,-50])
 mp.predict(x)
 
 mp.activation_fn(-10)
+
+# 1- activation_fn :ağırlıkları hesaplanarak fonksiyona gönderilen girdiler 0'dan büyük veya eşitse 1, değilse 0 döndürür. 
+#    predict :perceptron aracılığıyla bir girdi vererek çıktı döndürebilmek için ihtiyacımız olan fonksiyondur. Bias değerini X girdilerine ekler. Ağırlıklar ile çarpım işlemlerini yaparak üretilen z değerini aktivasyon fonksiyonuna yollar.
+#    fit : parametre olarak aldığı X ve d değerlerini kullanarak her bir döngüde e(error) değerinide hesaplayarak yeni ağırlıklar elde eder. e değeri 0'a yaklaştıkça doğru tahmin oranı artar.
+
+
+# 2- XOR işlemi için 
+#   d=np.array([0,1,1,0]) 
+#   d değerleri bu şekilde güncellenir.
+#   fonksiyonlar çalıştırıldıktan sonra yeni W değeri array([ 0., -1.,  0.]) bu şekilde olur.
+#   ancak predict fonksiyonu üzerinden çıktı aldığımızda doğru değerleri üretmemektedir.
