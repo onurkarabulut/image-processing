@@ -46,7 +46,6 @@ mp.activation_fn(-10)
 #    predict :perceptron aracılığıyla bir girdi vererek çıktı döndürebilmek için ihtiyacımız olan fonksiyondur. Bias değerini X girdilerine ekler. Ağırlıklar ile çarpım işlemlerini yaparak üretilen z değerini aktivasyon fonksiyonuna yollar.
 #    fit : parametre olarak aldığı X ve d değerlerini kullanarak her bir döngüde e(error) değerinide hesaplayarak yeni ağırlıklar elde eder. e değeri 0'a yaklaştıkça doğru tahmin oranı artar.
 
-
 # 2- XOR işlemi için 
 #   d=np.array([0,1,1,0]) 
 #   d değerleri bu şekilde güncellenir.
@@ -57,7 +56,6 @@ mp.activation_fn(-10)
 #    bir imzayı m*n çözünürlüğünde düşünürsek bunu imza.reshape(m*n*3,1) ile tek sütün halinde tüm rgb değerlerini gösterebilir ve predict fonksiyonunda kullanabiliriz.
 #    X değerlerimiz m*n*3 satır 40 sütundan oluşan bir matris olacaktır.
 #    d değerlerimiz ise 40 farklı değerden oluşacaktır.
-
 
 # 4- error değerlerini hesaplamak girdi olarak verdiğimiz X değerleri predict fonksiyonuna yollanarak i girdisi için Zi değeri elde edilir ve bu değer d[i] den çıkartılarak mevcut epochs için error değeri oluşturulmuş olur.
 
